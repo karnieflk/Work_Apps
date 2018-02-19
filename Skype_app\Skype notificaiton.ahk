@@ -518,7 +518,7 @@ Notify(Title="Notify()",Message="",Duration="",Options="")
 ; local WF, IF          ; Wallpaper File, Image File
 ; local AC, AT, AX      ; Action Clicked,Timeout,X Close
  static GNList, ACList, ATList, AXList, Exit, _Wallpaper_, _Title_, _Message_, _Progress_, _Image_
-;——————————————————————————————————————————————————————————————————————————————————
+;Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—
 If (Options)
 {
   Options.=" "
@@ -624,7 +624,7 @@ If (Options)
   IF MS =
    MS = 10
 }
-;————————————————————————————————————————————————————————————————————————
+;Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—
  If Duration =
   Duration = 30
  GN := GF
@@ -636,7 +636,7 @@ If (Options)
     Return 0            	  ;=== too many notifications open!
  GNList .= "|" GN
  GN2 := GN + GL - GF + 1
-;————————————————————————
+;Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—Â—
  If AC <>
   ACList .= "|" GN "=" AC
  If AT <>
@@ -696,8 +696,8 @@ If (Options)
  {
   GW += 10
   Gui, %GN%:Font, w%XW% s%XS% c%XC%, Arial Black
-  Gui, %GN%:Add, Text, % "x" GW-15 " y-2 Center w12 h20 g_Notify_Kill_" GN - GF + 1, ×
- } ; ×
+  Gui, %GN%:Add, Text, % "x" GW-15 " y-2 Center w12 h20 g_Notify_Kill_" GN - GF + 1, Ã—
+ } ; Ã—
  Gui, %GN%:Add, Text, x0 y0 w%GW% h%GH% BackgroundTrans g_Notify_Action_Clicked_ ; to catch clicks
  If (GR)
   WinSet, Region, % "0-0 w" GW " h" GH " R" GR "-" GR
